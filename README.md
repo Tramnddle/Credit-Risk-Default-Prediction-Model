@@ -20,6 +20,12 @@ This project focuses on the development of a classification model aimed at predi
     - Numerical summaries (min, max, mean, median)
     - Categorical summaries (top, unique, count)
     - Correlation plots, box plots for feature insights
+      
+- **Findings**
+    - interest_received_ratio ranges from 0.000 to 0.845, suggesting big differences in return on loans.
+    - number_of_loans has a mean of 0.098, but a max of 5, indicating most people have only a few loans.
+    - delinq_2yrs is mostly 0, meaning few recent delinquencies in the population.
+    - total_payment and received_principal are highly skewed: mean ≈ 10k but max ≈ 141k → outliers or high-value customers.
 
 - **Modeling & Hyperparameter Optimization**  
   Developed a classification model using **LightGBM**, optimized hyperparameters using **Hyperopt** to improve model performance.
